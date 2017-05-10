@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Lead extends Model
 {
-  /**
+    /**
    * The attributes that are mass assignable.
    *
    * @var array
@@ -15,8 +15,8 @@ class Lead extends Model
       'campaign_id', 'name', 'email', 'url',
   ];
 
-  public function campaign()
+    public function campaign()
     {
-      return $this->belongsTo(Campaign::class);
+        return $this->belongsTo(Campaign::class);
     }
 }

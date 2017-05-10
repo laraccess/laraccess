@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +15,7 @@ use Illuminate\Http\Request;
 // User
 Route::get('user', 'UserController@index');
 if (config('auth.registration.active', true)) {
-Route::post('user', 'UserController@create');
+    Route::post('user', 'UserController@create');
 }
 Route::put('user', 'UserController@update');
 Route::delete('user', 'UserController@delete');
