@@ -2,12 +2,11 @@
 
 namespace App\Policies;
 
-use App\User;
 use App\Campaign;
+use App\User;
 
 class CampaignPolicy
 {
-
     public function update(User $user, Campaign $campaign)
     {
         return $user->id === $campaign->user_id;
