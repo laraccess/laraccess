@@ -51,7 +51,7 @@
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
-                            @if (config('auth.register.active', true))
+                            @if (config('auth.registration.active', true))
                                 <li><a href="{{ route('register') }}">Register</a></li>
                             @endif
                         @else
