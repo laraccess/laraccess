@@ -167,6 +167,7 @@ return [
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
+        M1guelpf\LaravelSSL\LaravelSSLServiceProvider::class,
 
         /*
          * Application Service Providers...
